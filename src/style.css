@@ -1,13 +1,27 @@
-body {
+body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
     background-image: url("./tasty-cheesy-pizza-blue-with-fresh-vegetables.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    background-attachment: fixed;
+}
+
+#content {
+    display: flex; 
+    background-color: #ffde73;
+    border-radius: 30px;
+    width: 80vw;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 1rem;
+    flex: 1;
+    box-sizing: border-box;
 }
 
 .header-container {
@@ -31,29 +45,18 @@ body {
     border-bottom: none;
     background-color: #ffde73;
     margin-top: 5px;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
-#content {
-    display: flex; 
-    background-color: #ffde73;
-    border-radius: 30px;
-    width: 80vw;
-    height: 100vh;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 1rem;
-    flex: 1;
-}
 
 #content > .heading-one {
     font-size: 5rem;
     font-family: 'Potta One', cursive;
 }
 
-#content > .pizza-image-one,
-#content > .pizza-image-two {
+.heading-one > .pizza-image-one,
+.heading-one > .pizza-image-two {
     position: absolute;
     height: 25%;
 }
@@ -85,12 +88,37 @@ li {
     align-items: center;
 }
 
-.card h1 {
+h1 {
     font-family: 'Potta One', cursive;
+}
+
+h2 {
+    font-family: 'Potta One', cursive;
+}
+
+.team-list > li {
+    font-family: 'Yusei Magic', serif;
 }
 
 .card li,
 .card p {
     font-size: 1.2rem;
     font-family: 'Yusei Magic', serif;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    font-family: 'Yusei Magic', serif;
+}
+
+.inner-card-div {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner-image-div {
+    height: 200px;
+    width: 200px;
 }
